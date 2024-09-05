@@ -10,7 +10,7 @@ Esta configuración permitió que, aunque las voces se superpusieran ligeramente
 1. Se grabó el ruido ambiente de la sala y el video duro 7 segundos.
 ![84d49238-682b-45a6-9d09-af9436fbb2a3](https://github.com/user-attachments/assets/57e84fc6-88f9-49cc-a96b-89c718760eb9)
 
-2. Se grabó a tres personas hablando  ubicadas en diferentes puntos de la sala al tiempo con micrófonos diferentes y todos con una frecuencia de  44khz, cada uno de ellos hablo por 7 segundos, como tenemos 2 bytes, nuestro nivel de cuantificacion es decir nuestros bits por frecuencia son 16 bits y solo tenemos un canal por lo que es mono.
+2. Se grabó a tres personas hablando  ubicadas en diferentes puntos de la sala al tiempo con micrófonos diferentes y todos con una frecuencia de  44khz, cada uno de ellos hablo por 7 segundos, como tenemos 2 bytes, nuestro nivel de cuantificacion es decir nuestros bits por frecuencia son 16 bits por muestra y solo tenemos un canal por lo que es mono.
 
 Para analizar el espectro de todas las señales hicimos un análisis en el dominio de la frecuencia por medio de la transformada de Fourier (FFT), que es utilizada para convertir las señales del dominio del tiempo al dominio de la frecuencia. Esto te permite identificar las frecuencias presentes en la señal, algo crítico para la identificación y filtrado de la voz en el rango de 300 a 3400 Hz. Nuestro codigo grafica el espectro de frecuencias de cada fuente separada, permitiendo visualizar la distribución de las frecuencias de cada señal, lo que es esencial para analizar el contenido frecuencial y aislar la voz principal.
 
