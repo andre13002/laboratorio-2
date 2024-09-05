@@ -45,4 +45,17 @@ Esta configuración permitió que, aunque las voces se superpusieran ligeramente
     
 13.  Por ultimo lo que se hizo fue reproducir el audio filtrado de la persona numero 2 y este se puede escuchar al finalizar la compilacion de todos los gráficos.
 
+¿Cómo afecta la posición relativa de los micrófonos y las fuentes sonoras en la
+efectividad de la separación de señales?
+La ubicación de los micrófonos juega un papel crucial en la calidad de la grabación y en el éxito del proceso de filtrado. Si los micrófonos se colocan demasiado cerca entre sí, cada uno captará con mayor intensidad el ruido de las voces de las otras personas, lo que complicará significativamente el proceso de separación y filtrado de las señales. Esto podría generar interferencias que dificulten la distinción clara de cada voz. Por otro lado, si los micrófonos se colocan demasiado lejos, se corre el riesgo de que no todas las voces sean captadas con suficiente claridad por cada micrófono, lo que reduciría la efectividad del experimento. En este caso, habría menos señales relevantes que filtrar, lo cual comprometería los resultados y haría que el esfuerzo no valga la pena. Por tanto, es fundamental encontrar un equilibrio adecuado en la posición de los micrófonos para garantizar una captura óptima del audio y maximizar la eficacia del filtrado.
+
+¿Qué mejoras implementaría en la metodología para obtener mejores
+resultados?
+Consideraría implementar algunas mejoras en la configuración del cuarto insonorizado. En primer lugar, aumentaría el tamaño del cuarto para evitar que las voces más fuertes de algunas personas se capten con mayor intensidad en los micrófonos, lo que podría generar desequilibrios en la grabación y afectar la precisión del proceso de filtrado. Al proporcionar un espacio más grande, se reduciría la posibilidad de que las voces más fuertes dominen la captura de audio en detrimento de las voces más suaves. Además, sería ideal contar con un sistema de adquisición de audio de mayor calidad, lo que permitiría una captura más precisa y nítida de las señales de voz, mejorando el procesamiento posterior. Estas mejoras podrían marcar una gran diferencia en la calidad del experimento y sus resultados.
+
+
+
+
+
+
 
