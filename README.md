@@ -52,7 +52,13 @@ Análisis en el dominio de la frecuencia:
 
 9.  Se cálculo el dB de todas las señales por separadas y nos dieron para la voz 1 -20,26 dB, para la voz 2 -19,28 dB, y para la voz 3 -20,45 dB y luego de filtrar la voz 2 tuvimos -26,12 dB Esta disminución en dB indica que la energía de la señal ha disminuido después del filtrado.
     
-12. Se calculó el SNR de todas las señales incluyendo la del ruido y observamos que para todas las señales al ser positivo el resultado es mas fuerte la voz que el ruido ambiente, y en relacion al SNR del ruido ambiente tuvimos 0 dB lo que significa que la potencia de la señal y la potencia del ruido son exactamente iguales.
+12. Se calculó el SNR de todas las señales incluyendo la del ruido y observamos que para todas las señales al ser positivo el resultado es mas fuerte la voz que el ruido ambiente, y en relacion al SNR del ruido ambiente tuvimos 0 dB lo que significa que la potencia de la señal y la potencia del ruido son exactamente iguales. y para saber la calidad, tenemos estos valores:
+SNR > 60 dB: Excelente calidad de audio, normalmente indetectable para el oído humano el ruido presente.
+SNR entre 40 dB y 60 dB: Buena calidad de audio, el ruido puede ser perceptible pero no molesto.
+SNR entre 20 dB y 40 dB: Calidad de audio aceptable, el ruido es perceptible y puede ser molesto en algunas situaciones.
+SNR < 20 dB: Mala calidad de audio, el ruido es muy perceptible y afecta significativamente la experiencia de escucha.
+podemos ver que el SNR que tenemos para las señales es 42 a 68 dB por ende la calidad del audio es excelente, y en el ruido tenemos que es 0 dB lo que es correcto ya que es una señal de solo ruido.
+
 ![7edfbdf3-a563-4b52-89cc-0139403a3419](https://github.com/user-attachments/assets/00d6b864-8408-4222-b118-cff766d9fd5a)
 
     
