@@ -11,7 +11,14 @@ Esta configuración permitió que, aunque las voces se superpusieran ligeramente
 ![84d49238-682b-45a6-9d09-af9436fbb2a3](https://github.com/user-attachments/assets/57e84fc6-88f9-49cc-a96b-89c718760eb9)
 
 2. Se grabó a tres personas hablando  ubicadas en diferentes puntos de la sala al tiempo con micrófonos diferentes y todos con una frecuencia de  44khz, cada uno de ellos hablo por 7 segundos.
-3. Se realizó la transformada discreta de Fourier para realizar el análisis espectral de el ruido ambiente, donde en el eje horizontal (x) tenemos la frecuencia  en (Hz) que va desde 0 aun poco mas de los 20,000 Hz y en el vertical (y) tenemos la magnitud que va de 0 a 9, podemos visualizar que la mayor parte de la energía en el espectro esta en las frecuencias mas bajas y esto indica que el ruido que se capto fue fuerte, y vemos como a medida que aumentas las frecuencias se disminuye la señal, y muestra que después de los 10,000 Hz ya no hay energía y esto esta bien ya que asi deben ser las caracterizaciones de la señal del ruido ya que no tienen mucha frecuencia.
+
+Para analizar el espectro de todas las señales hicimos un análisis en el dominio de la frecuencia por medio de la transformada de Fourier (FFT), que es utilizada para convertir las señales del dominio del tiempo al dominio de la frecuencia. Esto te permite identificar las frecuencias presentes en la señal, algo crítico para la identificación y filtrado de la voz en el rango de 300 a 3400 Hz. Nuestro codigo grafica el espectro de frecuencias de cada fuente separada, permitiendo visualizar la distribución de las frecuencias de cada señal, lo que es esencial para analizar el contenido frecuencial y aislar la voz principal.
+
+las escalas que utilizamos son:
+Lineales: Cuando graficamos las señales en el dominio del tiempo, ya que estamos utilizando una escala lineal para mostrar la amplitud de la señal.
+Logarítmicas: cuando realiazamos un análisis del nivel de las señales (dB) y la relación señal-ruido (SNR),lo cual es apropiado ya que los niveles de sonido suelen abarcar un rango dinámico.
+
+4. Se realizó la transformada discreta de Fourier para realizar el análisis espectral de el ruido ambiente, donde en el eje horizontal (x) tenemos la frecuencia  en (Hz) que va desde 0 aun poco mas de los 20,000 Hz y en el vertical (y) tenemos la magnitud que va de 0 a 9, podemos visualizar que la mayor parte de la energía en el espectro esta en las frecuencias mas bajas y esto indica que el ruido que se capto fue fuerte, y vemos como a medida que aumentas las frecuencias se disminuye la señal, y muestra que después de los 10,000 Hz ya no hay energía y esto esta bien ya que asi deben ser las caracterizaciones de la señal del ruido ya que no tienen mucha frecuencia.
    
 ![20778113-6587-4719-83cc-0cf28efc64fb 2](https://github.com/user-attachments/assets/990e333e-98c0-4202-a064-0680e0e839bf)
 
@@ -26,7 +33,10 @@ Esta configuración permitió que, aunque las voces se superpusieran ligeramente
    
 ![f9abb185-3d43-48ff-9b92-f674734bc81c](https://github.com/user-attachments/assets/c91131ec-1118-4c6a-8a78-2f1275c3eaab)
 
-8. Luego graficamos por separado cada señal para apreciarlas mejor.
+8. Luego graficamos por separado cada señal para apreciarlas mejor, para separarlas tuvimos que hacer un análisis ya que en el dominio del tiempo, las señales de audio se observan como variaciones de amplitud en función del tiempo. nuestro código grafica estas señales y las separa en tres fuentes distintas tras aplicar ICA. Esto permite observar cómo cambia la amplitud de las señales a lo largo del tiempo.
+Las señales de audio filtradas y las originales se normalizan, lo que ayuda a hacer comparaciones consistentes entre ellas en el tiempo.
+Análisis en el dominio de la frecuencia:
+
     
  ![6aeeaae1-2332-401b-b327-e630848847f0](https://github.com/user-attachments/assets/89daf9ed-7fba-4ae5-8faa-85b88847bc64)
 ![63d148fb-d1a3-44e3-8b20-2c569c94c4bc 2](https://github.com/user-attachments/assets/1b09d6d7-354f-4d68-a06d-db071c6bfa6b)
